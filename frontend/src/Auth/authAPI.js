@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_URL = 'https://contactly-1clq.onrender.com/api/auth';
+const API_URL = 'https://contactly-backend-one.vercel.app/api/auth';
 
 // Setup Axios instance
 const axiosInstance = axios.create({
