@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://contactly-backend-one.vercel.app/',
+    baseURL: 'contactly-backend-gjvs60thy-anil-thakors-projects.vercel.app',
 })
 
 // Thunks for async operations
