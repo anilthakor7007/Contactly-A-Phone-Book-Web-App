@@ -58,8 +58,7 @@ export const loginUser = createAsyncThunk(
                 axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
             }
             
-            // alert(token);
-            // alert(user.username);
+        
             return { token, user }; // Returning both token and user
         } catch (error) {
             console.error('Login Error:', error.response?.data);

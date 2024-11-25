@@ -45,7 +45,7 @@ export const addContact = createAsyncThunk(
                     Authorization: `Bearer ${token}`, // Attach the token from the state
                 },
             });
-            alert("got the response" );
+            // alert("got the response" );
             console.log(response.data);
             return response.data;
         } catch (error) {

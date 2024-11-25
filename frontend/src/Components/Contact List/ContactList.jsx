@@ -51,22 +51,14 @@ const ContactList = () => {
         }else{
             console.error('Contact id is undefined');
         }
-
-        // if (window.confirm(`Are you sure you want to delete ${name}?`)) {
-        //     if (id) {
-        //         dispatch(deleteContact(id));
-        //     } else {
-        //         console.error('Contact id is undefined');
-        //     }
-        // }
     };
 
     const handleEditClick = (contact) => {
-        setEditingContact(contact); // Set the contact to be edited
+        setEditingContact(contact); 
     };
 
     const handleCancelEdit = () => {
-        setEditingContact(null); // Clear editing mode
+        setEditingContact(null); 
     };
 
     const handleLogout = () => {
@@ -91,11 +83,8 @@ const ContactList = () => {
           }
         );
       };
-    // const handleLogout = () => {
-    //     dispatch(logout());
-    //     localStorage.removeItem('token');
-    //     navigate('/');
-    // };
+
+
 
     if (status === 'loading') return <div>Loading...</div>;
     if (status === 'failed') return <div>Error: {error}</div>;
@@ -127,7 +116,7 @@ const ContactList = () => {
                                     key={contact._id}
                                     contact={contact}
                                     onDelete={handleDelete}
-                                    onEdit={() => handleEditClick(contact)} // Pass edit handler
+                                    onEdit={() => handleEditClick(contact)}
                                 />
                             ))
                         ) : (
